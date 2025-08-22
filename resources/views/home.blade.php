@@ -95,22 +95,22 @@
         <div class="relative isolate px-6 pt-14 lg:px-8">
             <div class="lg:mx-15 mx-auto py-32 sm:py-48 lg:py-30">
                 <div class="lg:text-start text-center max-w-2xl">
-                    <h1 class="text-5xl font-semibold tracking-tight text-balance text-white md:text-7xl lg:text-7xl">
+                    <h1 class="text-3xl font-semibold tracking-tight text-balance text-white md:text-7xl lg:text-7xl">
                         Ayo
                         Jelajahi Bali Tanpa Batas</h1>
                 </div>
                 <div class="lg:max-w-lg max-w-2xl lg:text-start text-center">
-                    <p class="mt-8 lg:text-lg md:text-lg font-normal text-pretty text-white text-sm">Liburan ke Bali
+                    <p class="mt-8 md:text-lg font-normal text-pretty text-white text-xs">Liburan ke Bali
                         jadi
                         lebih mudah dan nyaman bersama kami – sahabat perjalanan terpercaya di Pulau Dewata. Mulai dari
                         sewa motor, paket tour, hingga antar jemput bandara, semua bisa kamu dapatkan dengan cepat dan
                         tanpa ribet!</p>
                     <div class="mt-10 flex lg:items-start items-center lg:justify-start justify-center gap-x-10">
                         <a href="/sewa"
-                            class="rounded-md bg-[#008ECC] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-white hover:text-[#008ECC]  hover:outline-2 hover:outline-offset-0 hover:outline-[#008ECC]">Sewa
+                            class="rounded-md bg-[#008ECC] px-3.5 py-2.5 text-xs font-semibold text-white shadow-xs hover:bg-white hover:text-[#008ECC]  hover:outline-2 hover:outline-offset-0 hover:outline-[#008ECC]">Sewa
                             Kendaraan</a>
                         <a href="/paket"
-                            class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-xs hover:bg-black hover:text-white hover:outline-2 hover:outline-offset-0 hover:outline-white">Paket
+                            class="rounded-md bg-white px-3.5 py-2.5 text-xs font-semibold text-black shadow-xs hover:bg-black hover:text-white hover:outline-2 hover:outline-offset-0 hover:outline-white">Paket
                             Travel&Tour</a>
                     </div>
                 </div>
@@ -122,9 +122,9 @@
         <div class="relative isolate px-6 pt-14 lg:px-8">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="lg:text-start text-center">
-                    <h1 class="text-5xl font-bold text-black mb-8">About Us</h1>
+                    <h1 class="text-3xl md:text-5xl font-bold text-black mb-8">About Us</h1>
                 </div>
-                <div class="lg:text-lg md:text-lg text-xs">
+                <div class="md:text-lg text-xs">
                     <p class="text-gray-700 mb-6">
                         [Nama Usaha Anda] adalah layanan lokal Bali yang dibangun dari semangat memberikan pengalaman
                         terbaik
@@ -166,8 +166,8 @@
     <div class="h-auto bg-cover bg-center bg-no-repeat bg-white mb-15">
         <div class="relative isolate max-w-7xl mx-auto px-6 pt-14 lg:px-8">
             <div class="flex justify-between items-center mb-6">
-                <h1 class="text-4xl font-bold">Sewa Kendaraan</h1>
-                <a href="/sewa" class="text-sm text-gray-600 hover:text-black">Lihat Semua →</a>
+                <h1 class="text-xl md:text-4xl font-bold">Sewa Kendaraan</h1>
+                <a href="/sewa" class="text-xs md:text-sm text-gray-600 hover:text-black">Lihat Semua →</a>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -176,26 +176,26 @@
                         <img src="{{ asset('mobil/' . $mobil->gambar) }}" alt="{{ $mobil->nama }}"
                             class="mx-auto h-40 object-contain" />
                         <div class="flex justify-between items-center mt-2">
-                            <h3 class="text-lg font-semibold">{{ $mobil->nama }}</h3>
-                            <p class="text-sky-600 font-bold text-sm">
+                            <h3 class="font-semibold text-lg md:text-sm lg:text-lg">{{ $mobil->nama }}</h3>
+                            <p class="text-sky-600 font-bold text-sm md:text-xs lg:text-sm">
                                 Rp {{ number_format($mobil->harga, 0, ',', '.') }}
                             </p>
                         </div>
                         <div class="flex justify-between items-center">
-                            <p class="text-sm text-gray-500">{{ $mobil->tempat }} Orang</p>
-                            <span class="text-gray-500 font-normal">/ Hari</span>
+                            <p class="text-gray-500 text-sm md:text-xs lg:text-sm">{{ $mobil->tempat }} Orang</p>
+                            <span class="text-gray-500 font-normal text-sm md:text-xs lg:text-sm">/ Hari</span>
                         </div>
-                        <div class="mt-3 mb-3 px-2 grid grid-cols-3 gap-17 text-sm">
-                            <div class="flex items-start w-auto gap-2">
-                                <img class="h-6" src="/icon/person.png" alt="" />
+                        <div class="mt-3 mb-3 px-2 grid grid-cols-3 gap-5 lg:gap-17 text-sm md:text-xs lg:text-sm">
+                            <div class="flex gap-2">
+                                <img class="h-4 lg:h-6" src="/icon/person.png" alt="" />
                                 <p>Sopir</p>
                             </div>
-                            <div class="flex items-center w-auto gap-2">
-                                <img class="h-6" src="/icon/bensin.png" alt="" />
+                            <div class="flex gap-2">
+                                <img class="h-4 lg:h-6" src="/icon/bensin.png" alt="" />
                                 <p>BBM</p>
                             </div>
-                            <div class="flex items-center w-auto gap-2">
-                                <img class="h-6" src="/icon/kursi.png" alt="" />
+                            <div class="flex gap-2">
+                                <img class="h-4 lg:h-6" src="/icon/kursi.png" alt="" />
                                 <p>{{ $mobil->tempat }} Seat</p>
                             </div>
                         </div>
@@ -214,32 +214,32 @@
                         <img src="{{ asset('motor/' . $motor->gambar) }}" alt="{{ $motor->nama }}"
                             class="mx-auto h-40 object-contain" />
                         <div class="flex justify-between items-center mt-2">
-                            <h3 class="text-lg font-semibold">{{ $motor->nama }}</h3>
-                            <p class="text-sky-600 font-bold text-sm">
+                            <h3 class="font-semibold text-lg md:text-sm lg:text-lg">{{ $motor->nama }}</h3>
+                            <p class="text-sky-600 font-bold text-sm md:text-xs lg:text-sm">
                                 Rp {{ number_format($motor->harga, 0, ',', '.') }}
                             </p>
                         </div>
                         <div class="flex justify-between items-center">
-                            <p class="text-sm text-gray-500">{{ $motor->tempat }} Orang</p>
-                            <span class="text-gray-500 font-normal">/ Hari</span>
+                            <p class="text-gray-500 text-sm md:text-xs lg:text-sm">{{ $motor->tempat }} Orang</p>
+                            <span class="text-gray-500 font-normal text-sm md:text-xs lg:text-sm">/ Hari</span>
                         </div>
-                        <div class="mt-3 mb-3 px-2 grid grid-cols-3 gap-7 text-sm">
-                            <div class="flex items-start w-auto gap-2">
-                                <img class="h-6" src="/icon/helm.png" alt="" />
+                        <div class="mt-3 mb-3 px-2 grid grid-cols-3 gap-5 lg:gap-17 text-sm md:text-xs lg:text-sm">
+                            <div class="flex gap-2">
+                                <img class="h-4 lg:h-6" src="/icon/helm.png" alt="" />
                                 <p>Helm</p>
                             </div>
-                            <div class="flex items-center w-auto gap-2">
-                                <img class="h-6" src="/icon/bensin.png" alt="" />
+                            <div class="flex gap-2">
+                                <img class="h-4 lg:h-6" src="/icon/bensin.png" alt="" />
                                 <p>BBM</p>
                             </div>
-                            <div class="flex items-center w-auto gap-2">
-                                <img class="h-6" src="/icon/jas.png" alt="" />
-                                <p>Jas Hujan</p>
+                            <div class="flex gap-2">
+                                <img class="h-4 lg:h-6" src="/icon/jas.png" alt="" />
+                                <p>Jas</p>
                             </div>
                         </div>
                         <a href="https://wa.me/6285739846238?text=Halo%20Kak,%20saya%20mau%20cek%20ketersediaan%20motor%20{{ $motor->nama }}%20dan%20booking%20untuk%20di%20Bali."
-                            class="flex items-center justify-center gap-2 mt-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-md text-center">
-                            <img class="h-5 w-5" src="/icon/wa.png" alt="WA Icon" />
+                            class="flex items-center justify-center gap-2 mt-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-md text-center text-md">
+                            <img class="h-4 lg-4 lg:h-5 lg:w-5" src="/icon/wa.png" alt="WA Icon" />
                             Pesan Sekarang
                         </a>
                     </div>
@@ -251,8 +251,8 @@
     <div class="h-auto bg-cover bg-center bg-no-repeat bg-white">
         <div class="relative isolate max-w-7xl mx-auto px-6 pt-14 lg:px-8">
             <div class="flex justify-between items-center mb-6">
-                <h1 class="text-4xl font-bold">Paket Travel & Tour</h1>
-                <a href="/paket" class="text-sm text-gray-600 hover:text-black">Lihat Semua →</a>
+                <h1 class="text-xl md:text-4xl font-bold">Paket Travel & Tour</h1>
+                <a href="/paket" class="text-xs md:text-sm text-gray-600 hover:text-black">Lihat Semua →</a>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
@@ -263,22 +263,22 @@
 
                         <div class="p-4">
                             <div class="flex justify-between items-center">
-                                <h3 class="text-lg font-semibold">{{ $tour->nama }}</h3>
-                                <p class="text-sky-600 font-bold text-sm">
+                                <h3 class="font-semibold text-lg md:text-sm lg:text-lg">{{ $tour->nama }}</h3>
+                                <p class="text-sky-600 font-bold text-sm md:text-xs lg:text-sm">
                                     Rp {{ number_format($tour->harga, 0, ',', '.') }}
                                 </p>
                             </div>
                             <div class="flex justify-between items-center">
-                                <p class="text-sm text-sky-600 font-semibold">{{ $tour->tempat }}</p>
-                                <span class="text-gray-500 font-normal">/ Orang</span>
+                                <p class="text-sky-600 font-semibold text-sm md:text-xs lg:text-sm">{{ $tour->tempat }}</p>
+                                <span class="text-gray-500 font-normal text-sm md:text-xs lg:text-sm">/ Orang</span>
                             </div>
                             <div class="flex mt-3">
-                                <p class="font-normal text-gray-500 text-sm">
+                                <p class="font-normal text-gray-500 text-xs">
                                     {{ \Illuminate\Support\Str::words($tour->deskripsi, 25, '...') }}
                                 </p>
                             </div>
                             <a href="{{ route('paket.detail', ['tipe' => 'tour', 'id' => $tour->id]) }}"
-                                class="block text-center mt-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-md">
+                                class="block text-center mt-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-md text-md">
                                 Lihat Detail
                             </a>
                         </div>
@@ -294,8 +294,8 @@
 
                         <div class="p-4">
                             <div class="flex justify-between items-center">
-                                <h3 class="text-lg font-semibold">{{ $travel->nama }}</h3>
-                                <p class="text-sky-600 font-bold text-sm">
+                                <h3 class="font-semibold text-lg md:text-sm lg:text-lg">{{ $travel->nama }}</h3>
+                                <p class="text-sky-600 font-bold text-sm md:text-xs lg:text-sm">
                                     Rp {{ number_format($travel->harga, 0, ',', '.') }}
                                 </p>
                             </div>
@@ -309,7 +309,7 @@
                                 </p>
                             </div>
                             <a href="{{ route('paket.detail', ['tipe' => 'travel', 'id' => $travel->id]) }}"
-                                class="block text-center mt-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-md">
+                                class="block text-center mt-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-md text-md">
                                 Lihat Detail
                             </a>
                         </div>
@@ -322,20 +322,20 @@
     <div class="h-auto bg-cover bg-center bg-no-repeat bg-white mb-25">
         <div class="relative isolate mx-auto px-6 pt-14 lg:px-8">
             <section class="py-12 bg-white text-center">
-                <h2 class="text-4xl font-bold mb-10">Testimoni Customer</h2>
+                <h2 class="text-2xl md:text-4xl font-bold mb-10">Testimoni Customer</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto px-4">
                     <!-- Testimoni 1 -->
                     <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
                         <div class="flex items-center gap-3 mb-3">
-                            <img src="{{ asset('image/testi1.png') }}" class="w-20 h-20 rounded-full object-cover"
+                            <img src="{{ asset('image/testi1.png') }}" class="w-15 h-15 md:w-20 md:h-20 rounded-full object-cover"
                                 alt="Andi Setiawan">
                             <div class="text-left">
-                                <p class="font-semibold text-lg">Andi Setiawan</p>
-                                <p class="text-yellow-400 text-lg">★★★★★</p>
+                                <p class="font-semibold text-md md:text-lg">Andi Setiawan</p>
+                                <p class="text-yellow-400 text-md md:text-lg">★★★★★</p>
                             </div>
-                            <img class="ml-auto h-7 w-auto" src="/icon/maps.png" alt="" />
+                            <img class="ml-auto h-5 lg:h-7 w-auto" src="/icon/maps.png" alt="" />
                         </div>
-                        <p class="text-normal text-left text-gray-500 mt-7">Pelayanannya luar biasa! Mobil bersih, sopir
+                        <p class="text-sm text-left text-gray-500 mt-7">Pelayanannya luar biasa! Mobil bersih, sopir
                             ramah, dan
                             perjalanan ke Bali jadi pengalaman tak terlupakan. Pasti akan pakai lagi!</p>
                     </div>
@@ -343,15 +343,15 @@
                     <!-- Testimoni 2 -->
                     <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
                         <div class="flex items-center gap-3 mb-3">
-                            <img src="{{ asset('image/testi2.png') }}" class="w-20 h-20 rounded-full object-cover"
+                            <img src="{{ asset('image/testi2.png') }}" class="w-15 h-15 md:w-20 md:h-20 rounded-full object-cover"
                                 alt="Dewi Lestari">
                             <div class="text-left">
-                                <p class="font-semibold text-lg">Dewi Lestari</p>
-                                <p class="text-yellow-400 text-lg">★★★★★</p>
+                                <p class="font-semibold text-md md:text-lg">Dewi Lestari</p>
+                                <p class="text-yellow-400 text-md md:text-lg">★★★★★</p>
                             </div>
-                            <img class="ml-auto h-7 w-auto" src="/icon/maps.png" alt="" />
+                            <img class="ml-auto h-5 lg:h-7 w-auto" src="/icon/maps.png" alt="" />
                         </div>
-                        <p class="text-normal text-left text-gray-500 mt-7">Booking-nya gampang dan cepat. Paket
+                        <p class="text-sm text-left text-gray-500 mt-7">Booking-nya gampang dan cepat. Paket
                             wisatanya fleksibel, cocok
                             buat keluarga. Anak-anak juga senang banget selama trip ke Bali.</p>
                     </div>
@@ -359,15 +359,15 @@
                     <!-- Testimoni 3 -->
                     <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
                         <div class="flex items-center gap-3 mb-3">
-                            <img src="{{ asset('image/testi3.png') }}" class="w-20 h-20 rounded-full object-cover"
+                            <img src="{{ asset('image/testi3.png') }}" class="w-15 h-15 md:w-20 md:h-20 rounded-full object-cover"
                                 alt="Nada Rasya">
                             <div class="text-left">
-                                <h1 class="font-semibold text-lg">Nada Rasya</h1>
-                                <p class="text-yellow-400 text-lg">★★★★★</p>
+                                <h1 class="font-semibold text-md md:text-lg">Nada Rasya</h1>
+                                <p class="text-yellow-400 text-md md:text-lg">★★★★★</p>
                             </div>
-                            <img class="ml-auto h-7 w-auto" src="/icon/maps.png" alt="" />
+                            <img class="ml-auto h-5 lg:h-7 w-auto" src="/icon/maps.png" alt="" />
                         </div>
-                        <p class="text-normal text-left text-gray-500 mt-7">Profesional dan tepat waktu. Harga sesuai
+                        <p class="text-sm text-left text-gray-500 mt-7">Profesional dan tepat waktu. Harga sesuai
                             dengan kualitas
                             layanan. Sangat direkomendasikan untuk liburan tanpa ribet!</p>
                     </div>
@@ -407,21 +407,21 @@
     <footer class="bg-[#008ECC] text-white py-10">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm mb-10">
             <!-- Kontak Info -->
-            <div class="flex justify-center items-center gap-2">
+            <div class="flex justify-start md:justify-center gap-2">
                 <img class="h-10" src="/icon/address.png" alt="" />
                 <div>
                     <p class="text-white font-light">Address</p>
                     <p class="font-semibold">Bali</p>
                 </div>
             </div>
-            <div class="flex justify-center items-center gap-2">
+            <div class="flex justify-start md:justify-center gap-2">
                 <img class="h-10" src="/icon/email.png" alt="" />
                 <div>
                     <p class="text-white font-light">Email</p>
                     <a href="mailto:she@gmail.com" class="font-semibold">she@gmail.com</a>
                 </div>
             </div>
-            <div class="flex justify-center items-center gap-2">
+            <div class="flex justify-start md:justify-center gap-2">
                 <img class="h-10" src="/icon/telepon.png" alt="" />
                 <div>
                     <p class="text-white font-light">Phone</p>
@@ -439,15 +439,15 @@
             <!-- Profil -->
             <div class="items-center">
                 <h4 class="font-bold mb-2 text-xl">Profil</h4>
-                <p class="text-white/90 mb-4 text-lg">Nama adalah layanan penyewaan mobil dan paket wisata terpercaya
+                <p class="text-white/90 mb-4 text-md lg:text-lg">Nama adalah layanan penyewaan mobil dan paket wisata terpercaya
                     yang
                     siap menemani perjalanan Anda dengan aman, nyaman, dan mudah….</p>
                 <div class="flex gap-4 text-xl">
                     <a href="https://wa.me/6285739846238">
-                        <img class="h-9" src="/icon/wa2.png" alt="" />
+                        <img class="h-7 md:h-9" src="/icon/wa2.png" alt="" />
                     </a>
                     <a href="https://instagram.com">
-                        <img class="h-9" src="/icon/ig.png" alt="" />
+                        <img class="h-7 md:h-9" src="/icon/ig.png" alt="" />
                     </a>
                 </div>
             </div>
@@ -455,7 +455,7 @@
             <!-- Menu Lain -->
             <div>
                 <h4 class="font-bold mb-2 text-xl">Menu Lain</h4>
-                <ul class="space-y-2 text-lg text-white/90">
+                <ul class="space-y-2 text-md lg:text-lg text-white/90">
                     <li><a href="/" class="hover:underline">Tentang Kami</a></li>
                     <li><a href="/galleri" class="hover:underline">Galeri</a></li>
                     <li><a href="https://wa.me/6285739846238" class="hover:underline">Kontak</a></li>
@@ -464,7 +464,7 @@
             </div>
         </div>
 
-        <div class="text-center text-normal text-white mt-10">
+        <div class="text-center text-xs md:text-md text-white mt-10">
             © Copyright Nama 2025. Design by Fahmi
         </div>
     </footer>

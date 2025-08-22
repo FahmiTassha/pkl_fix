@@ -32,7 +32,7 @@
             class="relative inset-x-0 top-0 z-50 bg-white">
             <nav class="flex items-center justify-between p-3 lg:px-8" aria-label="Global">
                 <div class="flex lg:flex-1 items-center">
-                    <a href="#" class="-m-1.5 p-1.5">
+                    <a href="/" class="-m-1.5 p-1.5">
                         <img class="h-15 w-auto" src="/image/logo2.png" alt="" />
                     </a>
                 </div>
@@ -49,17 +49,20 @@
                     </button>
                 </div>
                 <div class="hidden lg:flex lg:gap-x-12">
-                    <a href="#" class="text-sm/6 font-semibold text-black">Home</a>
-                    <a href="#" class="text-sm/6 font-semibold text-black">Sewa Kendaraan</a>
-                    <a href="#" class="text-sm/6 font-semibold text-black">Paket Travel&Tour</a>
-                    <a href="#" class="text-sm/6 font-semibold text-black">Antar Jemput</a>
-                    <a href="#" class="text-sm/6 font-semibold text-black">Galeri</a>
-                    <a href="#" class="text-sm/6 font-semibold text-black">S&K</a>
+                    <a href="/" class="text-sm/6 font-semibold text-black">Home</a>
+                    <a href="/sewa" class="text-sm/6 font-semibold text-black">Sewa Kendaraan</a>
+                    <a href="/paket" class="text-sm/6 font-semibold text-black">Paket Travel&Tour</a>
+                    <a href="/antar" class="text-sm/6 font-semibold text-black">Antar Jemput</a>
+                    <a href="/galleri" class="text-sm/6 font-semibold text-black">Galeri</a>
+                    <a href="/sk" class="text-sm/6 font-semibold text-black">S&K</a>
                 </div>
-                <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:space-x-3">
-                    <img class="h-8 w-auto" src="/image/icon1.png" alt="" />
-                    <a href="#" class="text-sm/6 font-semibold text-black">Hubungi<br>Kami</a>
-                </div>
+                <a href="https://wa.me/6285739846238"
+                    class="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:space-x-3 flex items-center space-x-3 text-sm/6 font-semibold text-black">
+                    <img class="h-8 w-auto" src="/image/icon1.png" alt="Hubungi Kami" />
+                    <span>
+                        Hubungi<br>Kami
+                    </span>
+                </a>
             </nav>
             <!-- Mobile menu, show/hide based on menu open state. -->
             <div class="lg:hidden" x-description="Mobile menu, show/hide based on menu open state." x-ref="dialog"
@@ -70,7 +73,7 @@
                 <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
                     @click.away="open = false">
                     <div class="flex items-center justify-between">
-                        <a href="#" class="-m-1.5 p-1.5">
+                        <a href="/" class="-m-1.5 p-1.5">
                             <img class="h-15 w-auto" src="/image/logo2.png" alt="" />
                         </a>
                         <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="open = false">
@@ -84,20 +87,20 @@
                     <div class="mt-6 flow-root">
                         <div class="-my-6 divide-y divide-gray-500/10">
                             <div class="space-y-2 py-6">
-                                <a href="#"
+                                <a href="/"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
-                                <a href="#"
+                                <a href="/sewa"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Sewa
                                     Kendaraan</a>
-                                <a href="#"
+                                <a href="/paket"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Paket
                                     Travel&Tour</a>
-                                <a href="#"
+                                <a href="/antar"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Antar
                                     Jemput</a>
-                                <a href="#"
+                                <a href="/galleri"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Galeri</a>
-                                <a href="#"
+                                <a href="/sk"
                                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">S&K</a>
                             </div>
                         </div>
@@ -116,14 +119,14 @@
                 <div dir="ltr">
                     <div @click="tipe = 'tour'; currentIndex = 0"
                         :class="tipe === 'tour' ? 'text-black bg-white' : 'bg-sky-500 text-white'"
-                        class="border px-6 py-2 transition-all duration-300 font-semibold rounded-s-lg">
+                        class="cursor-pointer border px-6 py-2 transition-all duration-300 font-semibold rounded-s-lg">
                         Tour
                     </div>
                 </div>
                 <div dir="rtl">
                     <div @click="tipe = 'travel'; currentIndex = 0"
                         :class="tipe === 'travel' ? 'text-black bg-white' : 'bg-sky-500 text-white'"
-                        class="border px-6 py-2 transition-all duration-300 font-semibold rounded-s-lg">
+                        class="cursor-pointer border px-6 py-2 transition-all duration-300 font-semibold rounded-s-lg">
                         Travel
                     </div>
                 </div>
@@ -151,9 +154,8 @@
                         </p>
                     </div>
                     <div>
-                        <a :href="'https://wa.me/?text=Halo%20saya%20ingin%20memesan%20' + encodeURIComponent(currentItem.nama)"
-                            class="flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-md text-center">
-                            <img class="h-5 w-5" src="/icon/wa.png" alt="WA Icon" />
+                        <a :href="'/detail/' + tipe + '/' + currentItem.id"
+                            class="items-center justify-center bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 px-15 rounded-md text-center">
                             Lihat Detail
                         </a>
                     </div>
@@ -166,7 +168,7 @@
         <div class="relative isolate max-w-7xl mx-auto px-6 pt-14 lg:px-8">
             <div class="flex justify-between items-center mb-6">
                 <h1 class="text-4xl font-bold" x-text="tipe === 'tour' ? 'Paket Tour Bali' : 'Paket Travel'"></h1>
-                <a href="#" class="text-sm text-gray-600 hover:text-black">Lihat Semua →</a>
+                <a href="/paket" class="text-sm text-gray-600 hover:text-black">Lihat Semua →</a>
             </div>
 
             {{-- Bagian Foreach Tour --}}
@@ -254,14 +256,14 @@
                 <img class="h-10" src="/icon/email.png" alt="" />
                 <div>
                     <p class="text-white font-light">Email</p>
-                    <p class="font-semibold">She@gmail.com</p>
+                    <a href="mailto:she@gmail.com" class="font-semibold">she@gmail.com</a>
                 </div>
             </div>
             <div class="flex justify-center items-center gap-2">
                 <img class="h-10" src="/icon/telepon.png" alt="" />
                 <div>
                     <p class="text-white font-light">Phone</p>
-                    <p class="font-semibold">+62858 7805 3610</p>
+                    <a href="https://wa.me/6285739846238" class="font-semibold">+62857 3984 6238</a>
                 </div>
             </div>
         </div>
@@ -279,8 +281,12 @@
                     yang
                     siap menemani perjalanan Anda dengan aman, nyaman, dan mudah….</p>
                 <div class="flex gap-4 text-xl">
-                    <img href="#" class="h-9" src="/icon/wa2.png" alt="" />
-                    <img href="#" class="h-9" src="/icon/ig.png" alt="" />
+                    <a href="https://wa.me/6285739846238">
+                        <img class="h-9" src="/icon/wa2.png" alt="" />
+                    </a>
+                    <a href="https://instagram.com">
+                        <img class="h-9" src="/icon/ig.png" alt="" />
+                    </a>
                 </div>
             </div>
 
@@ -288,11 +294,10 @@
             <div>
                 <h4 class="font-bold mb-2 text-xl">Menu Lain</h4>
                 <ul class="space-y-2 text-lg text-white/90">
-                    <li><a href="#" class="hover:underline">Tentang Kami</a></li>
-                    <li><a href="#" class="hover:underline">Galeri</a></li>
-                    <li><a href="#" class="hover:underline">Kontak</a></li>
-                    <li><a href="#" class="hover:underline">Kebijakan Privasi</a></li>
-                    <li><a href="#" class="hover:underline">Syarat dan Ketentuan</a></li>
+                    <li><a href="/" class="hover:underline">Tentang Kami</a></li>
+                    <li><a href="/galleri" class="hover:underline">Galeri</a></li>
+                    <li><a href="https://wa.me/6285739846238" class="hover:underline">Kontak</a></li>
+                    <li><a href="/sk" class="hover:underline">Syarat dan Ketentuan</a></li>
                 </ul>
             </div>
         </div>
