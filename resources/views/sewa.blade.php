@@ -236,7 +236,7 @@
             {{-- Bagian Foreach MOTOR --}}
             <div x-show="tipe === 'motor'" x-cloak>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    @foreach ($motors->take(3) as $motor)
+                    @foreach ($motors as $motor)
                         @php
                             $pesanMotor = (
                                 "Halo *BALIOH TRANS*\n\n" .
